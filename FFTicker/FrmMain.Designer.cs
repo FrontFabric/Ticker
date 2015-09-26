@@ -1,4 +1,4 @@
-﻿namespace FFLinkMain
+﻿namespace FFTicker
 {
     partial class FrmMain
     {
@@ -41,14 +41,14 @@
             // 
             // tmrSnapshot
             // 
-            this.tmrSnapshot.Interval = 1000;
+            this.tmrSnapshot.Interval = 10000;
             this.tmrSnapshot.Tick += new System.EventHandler(this.tmrSnapshot_Tick);
             // 
             // icnTray
             // 
             this.icnTray.ContextMenuStrip = this.mnuTray;
             this.icnTray.Icon = ((System.Drawing.Icon)(resources.GetObject("icnTray.Icon")));
-            this.icnTray.Text = "notifyIcon1";
+            this.icnTray.Text = "FrontFabric - Ticker";
             this.icnTray.Visible = true;
             // 
             // mnuTray
@@ -88,7 +88,8 @@
             this.Name = "FrmMain";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FFLink";
+            this.Text = "FrontFabric - Ticker";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.mnuTray.ResumeLayout(false);
             this.ResumeLayout(false);
 

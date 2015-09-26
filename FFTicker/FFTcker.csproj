@@ -7,8 +7,8 @@
     <ProjectGuid>{E71E23D4-5568-4375-88BD-A00F49B63A5C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FFLinkMain</RootNamespace>
-    <AssemblyName>FFLinkMain</AssemblyName>
+    <RootNamespace>FFTicker</RootNamespace>
+    <AssemblyName>FFTicker</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -34,6 +34,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -63,6 +65,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
     <EmbeddedResource Include="FrmControls.resx">
       <DependentUpon>FrmControls.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,12 +94,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\FFLinkCore\FFLinkCore.csproj">
-      <Project>{42ea768e-8376-436c-957d-c284d590c379}</Project>
-      <Name>FFLinkCore</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="app16.ico" />

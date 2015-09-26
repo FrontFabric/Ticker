@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 
-namespace FFLinkMain
+namespace FFTicker
 {
     static class Program
     {

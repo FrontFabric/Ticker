@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace FFLinkMain
+namespace FFTicker
 {
     public partial class FrmControls : Form
     {
@@ -37,9 +37,18 @@ namespace FFLinkMain
             _frmMain.SettingsForm.Show();            
         }
 
-        private void btnSnapshots_Click(object sender, EventArgs e)
+        private void btnSnapshotsStart_Click(object sender, EventArgs e)
         {
             _frmMain.StartSnapshots();
+            btnSnapshotsStop.Visible = true;
+            btnSnapshotsStart.Visible = false;            
+        }
+
+        private void btnSnapshotsStop_Click(object sender, EventArgs e)
+        {
+            _frmMain.StopSnapshots();
+            btnSnapshotsStart.Visible = true;
+            btnSnapshotsStop.Visible = false;
         }
     }
 }
