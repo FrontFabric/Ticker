@@ -99,6 +99,8 @@
     <Content Include="app16.ico" />
     <Content Include="app24.ico" />
     <Content Include="app32.ico" />
+    <Content Include="img\start_13_17.png" />
+    <Content Include="img\stop_13_17.png" />
     <None Include="img\handle_10_17.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
